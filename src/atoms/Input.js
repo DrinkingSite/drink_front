@@ -12,5 +12,7 @@ export const Input = styled.input`
 export const Inputletter = styled.div`
      font-family : "Inter";
      font-size: 1.2rem;
-    margin-bottom : 10px;
+     margin-bottom : 10px;
+  
+    
 `
