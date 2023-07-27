@@ -6,7 +6,8 @@ export const FormWrapper = styled.div`
   display:flex;
   align-items:flex-start;
   flex-direction: column;
-  width:400px;
+  //width:100%;
+  text-align: center;
   
 `;
 

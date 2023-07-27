@@ -12,6 +12,8 @@ const Logo = styled.img`
 `
 const Logindiv = styled.div`
       text-align: center;
+      justify-content: center;
+      justify-items: center;
 `
 
 
