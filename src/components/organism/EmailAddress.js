@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Email from '../Molecule/Email'
 import Password from "../Molecule/Password";
 import {Loginbtn} from "../atoms/Login";
-import Logomark from "../assets/알믈리에.jpeg"
+import Logomark from "../../assets/알믈리에.jpeg"
 
 const Logo = styled.img`
       width:350px;

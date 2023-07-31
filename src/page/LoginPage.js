@@ -1,4 +1,4 @@
-import LoginTemplate from "../template/LoginTemplate";
+import LoginTemplate from "../components/template/LoginTemplate";
 import styled from "styled-components";
 
 const LoginCover = styled.div`

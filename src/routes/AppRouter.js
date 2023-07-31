@@ -1,12 +1,32 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import App from "../App";
+import Header from "../components/organism/Header";
+import LoginPage from "../page/LoginPage";
+
+function BasicLayout() {
+    return (
+        <>
+            <Header />
+            <Outlet />
+        </>
+    );
+}
+
+function UserLayout() {
+    return <Outlet />;
+}
 
 function AppRouter() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<App />} />
+                <Route path="/login" element={<UserLayout />}>
+                    <Route index element={<LoginPage />} />
+                </Route>
+                <Route path="/" element={<BasicLayout />}>
+                    <Route index element={<App />} />
+                </Route>
             </Routes>
         </BrowserRouter>
     )

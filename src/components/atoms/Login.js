@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import Naver from "../assets/naver_icon_square.png"
-import Kakao from "../assets/kakao_icon.png"
+import Naver from "../../assets/naver_icon_square.png"
+import Kakao from "../../assets/kakao_icon.png"
 
 export const Loginbtn = styled.button`
   font-size : 20px;
