@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../atoms/Button";
 import styled from "styled-components";
+import { Logo } from "../atoms/Logo";
 
 const NavContainer = styled.div`
   display: flex;
@@ -22,21 +23,22 @@ const RightButtonContainer = styled.div`
 
 
 const HeaderNav = () => {
-    return (
-        <NavContainer>
-            <LeftButtonContainer>
-                <Button text="Home" to={"/"} />
-                <Button text="Category" />
-                <Button text="Pricing" />
-            </LeftButtonContainer>
-            검색
-            <RightButtonContainer>
-                <Button text="SignIn" to={"/login"} />
-                <Button text="SignUp" to={"/login"} />
-            </RightButtonContainer>
+  return (
+    <NavContainer>
+      <LeftButtonContainer>
+        <Logo />
+        <Button text="Home" to={"/"} />
+        <Button text="Category" to={"/category"} />
+        <Button text="Pricing" />
+      </LeftButtonContainer>
+      검색
+      <RightButtonContainer>
+        <Button text="SignIn" to={"/login"} />
+        <Button text="SignUp" to={"/login"} />
+      </RightButtonContainer>
 
-        </NavContainer>
-    );
+    </NavContainer>
+  );
 };
 
 export default HeaderNav;

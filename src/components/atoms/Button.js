@@ -6,6 +6,7 @@ const StyledButton = styled.button`
   background: #fff;
   padding: 0 10px;
   margin-right: 10px;
+  border-radius: 10px;
   border: none;
   background: #F4EEFF;
   font-size: 14px;
@@ -19,10 +20,10 @@ const StyledButton = styled.button`
 `;
 
 const Button = ({ text, to }) => {
-  const navigate = useNavigate(); // useHistory 훅을 사용하여 history 객체를 가져옴
+  const navigate = useNavigate(); 
 
   const handleClick = () => {
-    navigate(to); // to 속성에 지정된 경로로 이동
+    navigate(to); 
   };
 
   return <StyledButton onClick={handleClick}>{text}</StyledButton>;
