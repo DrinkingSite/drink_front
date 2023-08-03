@@ -15,7 +15,7 @@ export const FormWrapper = styled.div`
 export default function Email(){
     return(
         <FormWrapper>
-            <Inputletter>Email</Inputletter>
+            <Inputletter>이메일</Inputletter>
             <Input/>
 
         </FormWrapper>

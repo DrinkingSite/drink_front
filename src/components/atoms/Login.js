@@ -76,7 +76,7 @@ export const KakaoLoginTitle = styled.span`
 	line-height: 24px;
 	
 `
-export const Signup = styled.button`
+export const Signup= styled.button`
 	font-family : "Inter";
 	font-size: 1.2rem;
 	font-weight: bold;

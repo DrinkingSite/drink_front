@@ -32,7 +32,7 @@ const HeaderNav = () => {
             검색
             <RightButtonContainer>
                 <Button text="SignIn" to={"/login"} />
-                <Button text="SignUp" to={"/login"} />
+                <Button text="SignUp" to={"/join"} />
             </RightButtonContainer>
 
         </NavContainer>

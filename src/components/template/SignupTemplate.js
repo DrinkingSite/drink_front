@@ -1,9 +1,10 @@
 import EmailAddress from "../organism/EmailAddress";
-import {Loginbtn, Signup} from "../atoms/Login";
+import {Loginbtn} from "../atoms/Login";
 import styled from "styled-components";
 import SocialLogin, {SocialWrapper} from "../organism/SocialLogin"
 import {Inputletter} from "../atoms/Input";
 import {Joinbtn} from "../atoms/Login";
+import Signup from "../organism/Signup"
 
 
 const LoginCover=styled.div`
@@ -40,23 +41,17 @@ const SignupContainer=styled.div`
   text-align: center;
 `
 
-export default function LoginTemplate(){
+export default function SignupTemplate(){
     return(
         <div>
             <LoginCover>
-                <LoginHeader>로그인</LoginHeader>
-                <LoginContainer>
-                    <EmailAddress/>
-                    <SocialLogin/>
-                        <SignupContainer>
-                            <Inputletter style={{marginLeft:"20%"}}>계정이 없으신가요?</Inputletter>
-                            <Signup>회원가입하러가기</Signup>
-
-                        </SignupContainer>
+                <LoginHeader>회원가입</LoginHeader>
+                <SignupContainer>
+                    <Signup/>
 
 
 
-                </LoginContainer>
+                </SignupContainer>
             </LoginCover>
 
         </div>

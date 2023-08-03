@@ -6,7 +6,7 @@ import {FormWrapper} from "./Email";
 export default function Password(){
     return(
         <FormWrapper>
-            <Inputletter>Password</Inputletter>
+            <Inputletter>비밀번호</Inputletter>
             <Input/>
 
         </FormWrapper>

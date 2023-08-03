@@ -3,6 +3,7 @@ import Email from '../Molecule/Email'
 import Password from "../Molecule/Password";
 import {Loginbtn} from "../atoms/Login";
 import Logomark from "../../assets/알믈리에흰ver.png"
+import Join from "../Molecule/Join"
 
 const Logo = styled.img`
       width:300px;
@@ -17,13 +18,11 @@ const Logindiv = styled.div`
 `
 
 
-export default function EmailAddress(){
+export default function Signup(){
     return(
         <Logindiv>
-            <Logo src={Logomark}/>
-            <Email/>
-            <Password/>
-            <Loginbtn>로그인하기</Loginbtn>
+            <Join/>
+            <Loginbtn>가입하기</Loginbtn>
         </Logindiv>
 
     )
