@@ -4,6 +4,7 @@ import App from "../App";
 import Header from "../components/organism/Header";
 import CategoryPage from "../page/CategoryPage";
 import LoginPage from "../page/LoginPage";
+import SignUpPage from "../page/SignUpPage";
 
 function BasicLayout() {
     return (
@@ -22,9 +23,9 @@ function AppRouter() {
     return (
         <BrowserRouter>
             <Routes>
-                {/* <Route path="/login" element={<UserLayout />}>
-                    <Route index element={<LoginPage />} />
-                </Route> */}
+                <Route path="/join" element={<UserLayout />}>
+                    <Route index element={<SignUpPage />} />
+                </Route>
                 <Route path="/" element={<BasicLayout />}>
                     <Route index element={<App />} />
                     <Route path="category" element={<CategoryPage />} />
