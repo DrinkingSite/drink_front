@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Logo from "/Users/shinhee/drink_front/src/assets/알믈리에흰ver.png"
+// import Logo from "/Users/shinhee/drink_front/src/assets/알믈리에흰ver.png"
+import Logo from "../../assets/logo.png"
 
 export const LogoContainer = styled.div`
   text-align: center;

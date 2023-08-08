@@ -1,7 +1,7 @@
-import CategoryIcon from "/Users/shinhee/drink_front/src/assets/category.png"
+import CategoryIcon from "../../assets/category.png"
 import styled from "styled-components";
 import {FormWrapper} from "./Email";
-import {Inputletter} from "../atoms/Input";
+import { Inputletter } from "../atoms/Input";
 
 
 export const Catecontainer =styled.div`
