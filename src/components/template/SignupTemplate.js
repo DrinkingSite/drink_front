@@ -1,9 +1,9 @@
 import EmailAddress from "../organism/EmailAddress";
-import {Loginbtn} from "../atoms/Login";
+import {Loginbtn} from "../atoms/Loginatom";
 import styled from "styled-components";
-import SocialLogin, {SocialWrapper} from "../organism/SocialLogin"
+import Login, {SocialWrapper} from "../organism/Login"
 import {Inputletter} from "../atoms/Input";
-import {Joinbtn} from "../atoms/Login";
+import {Joinbtn} from "../atoms/Loginatom";
 import Signup from "../organism/Signup"
 
 
