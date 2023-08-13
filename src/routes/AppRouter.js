@@ -5,6 +5,8 @@ import Header from "../components/organism/Header";
 import CategoryPage from "../page/CategoryPage";
 import LoginPage from "../page/LoginPage";
 import SignUpPage from "../page/SignUpPage";
+import Oauth from "../components/template/Oauth";
+
 
 function BasicLayout() {
     return (
@@ -30,6 +32,7 @@ function AppRouter() {
                     <Route index element={<App />} />
                     <Route path="category" element={<CategoryPage />} />
                     <Route path="login" element={<LoginPage />} />
+                    <Route path="kakao/callback" element={<Oauth/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
