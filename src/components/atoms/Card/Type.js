@@ -4,6 +4,7 @@ const TypeName = styled.p`
     color: #64748B;
     margin-bottom: 0px;
     font-size: 14px;
+    width: fit-content;
 `;
 
 
