@@ -26,11 +26,11 @@ const HeaderNav = () => {
     return (
         <NavContainer>
             <LeftButtonContainer>
+              <Logo />
                 <Button text="Home" to={"/"} />
                 <Button text="Category" to={"/category"} />
                 <Button text="Pricing" />
             </LeftButtonContainer>
-            검색
             <RightButtonContainer>
                 <Button text="SignIn" to={"/login"} />
                 <Button text="SignUp" to={"/join"} />

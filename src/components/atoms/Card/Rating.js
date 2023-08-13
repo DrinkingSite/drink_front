@@ -12,6 +12,7 @@ const StyledParagraph = styled.p`
     display: flex;
     margin-top: 5px;
     margin-bottom: 5px;
+    align-items: center;
 `
 
 

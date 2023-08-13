@@ -11,7 +11,9 @@ const CenteredContainer = styled.div`
   `;
 
 const CardForm = styled.div`
-  
+  border: 1px solid #F4EEFF;
+  padding: 15px;
+  border-radius: 5px;
 `;
 
 export default function Card() {

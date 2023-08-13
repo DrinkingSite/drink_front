@@ -3,22 +3,21 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 const StyledButton = styled.button`
-  padding: 0 10px;
-  margin-right: 10px;
   border-radius: 10px;
+  margin: 5px;
   border: none;
-  background: #F4EEFF;
+  background: #ffffff;
   font-size: 14px;
-  height: 100%;
+  height: 90%;
   &:hover {
-    background-color: #ffffff;
+    background-color: #F4EEFF;
   }
   &:active {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.2);
   }
 `;
 
-const Button = ({ text, to }) => {
+const TabBtn = ({ text, to }) => {
   const navigate = useNavigate(); 
 
   const handleClick = () => {
@@ -28,4 +27,4 @@ const Button = ({ text, to }) => {
   return <StyledButton onClick={handleClick}>{text}</StyledButton>;
 };
 
-export default Button;
+export default TabBtn;
