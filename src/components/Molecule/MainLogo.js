@@ -9,7 +9,7 @@ export const LogoContainer = styled.div`
   margin-top:5px;
 `;
 
-const LogoImage = styled.img`
+export const LogoImage = styled.img`
   width: 80px; /* 로고의 가로 크기 설정 */
   height: auto;
 `;

@@ -29,12 +29,7 @@ export default function Login(){
     return(
         <div>
             <SocialWrapper>
-                <NaverLoginBtn>
-                    {/*<NaverIcon src={Naver}/>*/}
-                    {/*<NaverLoginTitle>네이버로 시작하기</NaverLoginTitle>*/}
-                    <NaverLogin/>
-
-                </NaverLoginBtn>
+                <NaverLogin/>
 
                 <KakaoLoginBtn onClick={loginHandler}>
                     <KakaoIcon src={Kakao}/>
