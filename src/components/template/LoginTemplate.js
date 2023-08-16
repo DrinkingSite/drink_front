@@ -2,8 +2,16 @@ import EmailAddress from "../organism/EmailAddress";
 import {Loginbtn, Signup} from "../atoms/Loginatom";
 import styled from "styled-components";
 import Login, {SocialWrapper} from "../organism/Login"
-import {Inputletter} from "../atoms/Input";
-import {Joinbtn} from "../atoms/Loginatom";
+import MainLogo, {LogoContainer} from "../Molecule/MainLogo";
+import Logo from "../../assets/logo.png";
+import React from "react";
+
+export const LogoImage = styled.img`
+  width: 200px; /* 로고의 가로 크기 설정 */
+  height: auto;
+  padding-bottom: 20px;
+`;
+
 
 
 const LoginCover=styled.div`
@@ -34,11 +42,6 @@ const LoginContainer=styled.div`
   flex-direction: column;
   text-align: center;
 `
-const SignupContainer=styled.div`
-  display:flex;
-  flex-direction: row;
-  text-align: center;
-`
 
 export default function LoginTemplate(){
     return(
@@ -46,6 +49,10 @@ export default function LoginTemplate(){
             <LoginCover>
                 <LoginHeader>로그인</LoginHeader>
                 <LoginContainer>
+                    <LogoContainer>
+                        <LogoImage src={Logo} alt="로고" />
+                    </LogoContainer>
+
                     <Login/>
 
                 </LoginContainer>
