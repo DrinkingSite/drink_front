@@ -1,5 +1,3 @@
-import EmailAddress from "../organism/EmailAddress";
-import {Loginbtn, Signup} from "../atoms/Loginatom";
 import styled from "styled-components";
 import Login, {SocialWrapper} from "../organism/Login"
 import MainLogo, {LogoContainer} from "../Molecule/MainLogo";
@@ -47,7 +45,7 @@ export default function LoginTemplate(){
     return(
         <div>
             <LoginCover>
-                <LoginHeader>로그인</LoginHeader>
+                <LoginHeader>로그인 / 회원가입</LoginHeader>
                 <LoginContainer>
                     <LogoContainer>
                         <LogoImage src={Logo} alt="로고" />
