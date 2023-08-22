@@ -1,5 +1,13 @@
+import styled from "styled-components";
+
+const StyledCardInform = styled.p`
+  margin: 0;
+  font-size: 17px;
+  width: fit-content;
+`;
+
 const CardInform = ({ text }) => {
-    return(<p style={{margin: "0px", fontSize: "17px", width: "fit-content"}}>{text}</p>)
-}
+  return <StyledCardInform>{text}</StyledCardInform>;
+};
 
 export default CardInform;

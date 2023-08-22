@@ -1,6 +1,6 @@
 import HorizonLine from "../atoms/HorizonLine";
 import styled from "styled-components";
-import Kakao from "/Users/shinhee/drink_front/src/assets/kakao_icon.png"
+import Kakao from "../../assets/kakao_icon.png"
 import Naver from "../../assets/btnG_완성형.png"
 import NaverLogin from "../Molecule/NaverLogin"
 
