@@ -32,8 +32,7 @@ const HeaderNav = () => {
                 <Button text="Pricing" />
             </LeftButtonContainer>
             <RightButtonContainer>
-                <Button text="SignIn" to={"/login"} />
-                <Button text="SignUp" to={"/join"} />
+                <Button text="SignIn / SignUp" to={"/login"} />
             </RightButtonContainer>
 
     </NavContainer>
