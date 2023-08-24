@@ -6,6 +6,9 @@ import CategoryPage from "../page/CategoryPage";
 import DetailPage from "../page/DetailPage";
 import LoginPage from "../page/LoginPage";
 import Redirection from "../components/template/Redirection";
+import MyPage from "../page/MyPage";
+import ShippingPage from "../page/ShippingPage";
+import MyInfoPage from "../page/MyInfoPage";
 
 
 function BasicLayout() {
@@ -32,6 +35,14 @@ function AppRouter() {
 
                     <Route path="kakao/callback" element={<Redirection/>}/>
                     <Route path="detail" element={<DetailPage />} />
+
+                    <Route path="my" element={<MyPage />} >
+                        <Route path="info" element={<MyInfoPage />} />
+
+                        <Route path="shipping" element={<ShippingPage />} />
+                        <Route path="reviews" element={<MyPage />} />
+                        <Route path="cart" element={<ShippingPage />} />
+                    </Route>
 
                 </Route>
             </Routes>
