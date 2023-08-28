@@ -1,39 +1,33 @@
-import React, { useEffect, useState } from "react";
-import DaumPostcode from "react-daum-postcode";
+import React, { useState } from 'react';
+import PopupDom from '../components/Molecule/PopupDom';
+import PopupPostCode from '../components/Molecule/PopupPostCode'
 
-const Post = (props) => {
+const Test = () => {
+    // 팝업창 상태 관리
+    const [isPopupOpen, setIsPopupOpen] = useState(false)
 
-    const complete = (data) =>{
-        let fullAddress = data.address;
-        let extraAddress = '';
-
-        if (data.addressType === 'R') {
-            if (data.bname !== '') {
-                extraAddress += data.bname;
-            }
-            if (data.buildingName !== '') {
-                extraAddress += (extraAddress !== '' ? `, ${data.buildingName}` : data.buildingName);
-            }
-            fullAddress += (extraAddress !== '' ? ` (${extraAddress})` : '');
-        }
-        console.log(data)
-        console.log(fullAddress)
-        console.log(data.zonecode)
-
-        props.setcompany({
-            ...props.company,
-            address:fullAddress,
-        })
+    // 팝업창 열기
+    const openPostCode = () => {
+        setIsPopupOpen(true)
     }
 
-    return (
-        <div >
-            <DaumPostcode
-                className="postmodal"
-                autoClose
-                onComplete={complete} />
-        </div>
-    );
-};
+    // 팝업창 닫기
+    const closePostCode = () => {
+        setIsPopupOpen(false)
+    }
 
-export default Post;
+    return(
+        <div>
+            <button type='button' onClick={openPostCode}>우편번호 검색</button>
+            <div id='popupDom'>
+                {isPopupOpen && (
+                    <PopupDom>
+                        <PopupPostCode onClose={closePostCode} />
+                    </PopupDom>
+                )}
+            </div>
+        </div>
+    )
+}
+
+export default Test;

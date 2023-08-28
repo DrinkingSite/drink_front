@@ -1,4 +1,4 @@
-import Sidebar from "../components/Molecule/Sidbar";
+import Sidebar from "../components/Molecule/Sidebar";
 import MyInfo from "../components/Molecule/MyInfo";
 import React from "react";
 import styled from "styled-components";

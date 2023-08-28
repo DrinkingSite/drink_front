@@ -1,9 +1,7 @@
 import styled from "styled-components";
-<<<<<<< HEAD
+
 import Kakao from "../../assets/kakao_icon.png"
 import Naver from "../../assets/btnG_완성형.png"
-=======
->>>>>>> origin/main
 import NaverLogin from "../Molecule/NaverLogin"
 import KakaoLogin from "../Molecule/KakaoLogin";
 

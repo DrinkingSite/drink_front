@@ -9,6 +9,7 @@ import Redirection from "../components/template/Redirection";
 import MyPage from "../page/MyPage";
 import ShippingPage from "../page/ShippingPage";
 import MyInfoPage from "../page/MyInfoPage";
+import Sidebar from "../components/Molecule/Sidebar";
 
 
 function BasicLayout() {
@@ -35,16 +36,19 @@ function AppRouter() {
 
                     <Route path="kakao/callback" element={<Redirection/>}/>
                     <Route path="detail" element={<DetailPage />} />
+                    <Route path="shipping" element={<ShippingPage />} />
 
-                    <Route path="my" element={<MyPage />} >
+                    <Route path="my" element={<Sidebar />} >
                         <Route path="info" element={<MyInfoPage />} />
 
-                        <Route path="shipping" element={<ShippingPage />} />
                         <Route path="reviews" element={<MyPage />} />
                         <Route path="cart" element={<ShippingPage />} />
                     </Route>
 
+
+
                 </Route>
+
             </Routes>
         </BrowserRouter>
     )
